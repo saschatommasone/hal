@@ -1,7 +1,7 @@
 var classhal_1_1_recent_file_item =
 [
     [ "RecentFileItem", "classhal_1_1_recent_file_item.html#a723e7b9472d488154869837fb6ced2a2", null ],
-    [ "enterEvent", "classhal_1_1_recent_file_item.html#abef2349fda55960e3d55822dcb34f54a", null ],
+    [ "enterEvent", "classhal_1_1_recent_file_item.html#accde0ae00642d804ca14a2b4ed33c376", null ],
     [ "eventFilter", "classhal_1_1_recent_file_item.html#ac0f9c33df8153c46e3d73249d2124a62", null ],
     [ "file", "classhal_1_1_recent_file_item.html#a8c8f38db3434b809a7d5cd6916a8f7a5", null ],
     [ "hover", "classhal_1_1_recent_file_item.html#a125ef965f5fd2bbd61da7313c65caf23", null ],
@@ -17,10 +17,5 @@ var classhal_1_1_recent_file_item =
     [ "setIconPath", "classhal_1_1_recent_file_item.html#ad6e9237537525e4512a5d779db1561b0", null ],
     [ "setIconStyle", "classhal_1_1_recent_file_item.html#a3acd7fa17d644e3c181c32d13c2f0e1a", null ],
     [ "setMissing", "classhal_1_1_recent_file_item.html#abf53f74bf7bddd3afef1463547b8149d", null ],
-    [ "sizeHint", "classhal_1_1_recent_file_item.html#aa3230bbc1117767314698d6eeef23dde", null ],
-    [ "hover", "classhal_1_1_recent_file_item.html#a08911388b5df507deee4910102a667b8", null ],
-    [ "iconPath", "classhal_1_1_recent_file_item.html#ace21bce12087ede7676b6349d85de975", null ],
-    [ "iconStyle", "classhal_1_1_recent_file_item.html#a63a8ab21d8b28abf56de650f8c55b9db", null ],
-    [ "isProject", "classhal_1_1_recent_file_item.html#a3aa68986ca2e461980e4d5e0b5dd23ae", null ],
-    [ "missing", "classhal_1_1_recent_file_item.html#aad0eb17ef35b31c7cdcfe2f0abb7f562", null ]
+    [ "sizeHint", "classhal_1_1_recent_file_item.html#aa3230bbc1117767314698d6eeef23dde", null ]
 ];

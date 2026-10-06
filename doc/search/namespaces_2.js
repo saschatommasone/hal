@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['netlist_5ffactory_21277',['netlist_factory',['../namespacenetlist__factory.html',1,'']]],
-  ['netlist_5fserializer_21278',['netlist_serializer',['../namespacenetlist__serializer.html',1,'']]]
+  ['detail_23094',['detail',['../namespacepybind11_1_1detail.html',1,'pybind11']]],
+  ['pybind11_23095',['pybind11',['../namespacepybind11.html',1,'']]]
 ];

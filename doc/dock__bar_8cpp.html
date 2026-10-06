@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HAL: /home/runner/work/hal/hal/plugins/gui/src/docking_system/dock_bar.cpp File Reference</title>
+<title>HAL: plugins/gui/src/docking_system/dock_bar.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,9 @@
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HAL
+   &#160;<span id="projectnumber">v4.4.1-491-g7151a1b7d</span>
    </div>
+   <div id="projectbrief">The Hardware Analyzer - a comprehensive reverse engineering and manipulation framework for gate-level netlists.</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +95,6 @@ $(document).ready(function(){initNavTree('dock__bar_8cpp.html',''); initResizabl
 <code>#include &quot;<a class="el" href="content__widget_8h_source.html">gui/content_widget/content_widget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="content__drag__relay_8h_source.html">gui/docking_system/content_drag_relay.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dock__mime__data_8h_source.html">gui/docking_system/dock_mime_data.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gui__globals_8h_source.html">gui/gui_globals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="content__anchor_8h_source.html">gui/content_anchor/content_anchor.h</a>&quot;</code><br />
 <code>#include &lt;QApplication&gt;</code><br />
 <code>#include &lt;QDrag&gt;</code><br />
@@ -107,28 +108,34 @@ $(document).ready(function(){initNavTree('dock__bar_8cpp.html',''); initResizabl
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dock_bar.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="dock__bar_8cpp__incl.png" border="0" usemap="#a_2home_2runner_2work_2hal_2hal_2plugins_2gui_2src_2docking__system_2dock__bar_8cpp" alt=""/></div>
-<map name="a_2home_2runner_2work_2hal_2hal_2plugins_2gui_2src_2docking__system_2dock__bar_8cpp" id="a_2home_2runner_2work_2hal_2hal_2plugins_2gui_2src_2docking__system_2dock__bar_8cpp">
-<area shape="rect" title=" " alt="" coords="1247,5,1468,61"/>
-<area shape="rect" href="dock__bar_8h.html" title=" " alt="" coords="73,109,225,151"/>
-<area shape="rect" href="content__frame_8h.html" title=" " alt="" coords="249,109,444,151"/>
-<area shape="rect" href="content__widget_8h.html" title=" " alt="" coords="468,109,615,151"/>
-<area shape="rect" href="content__drag__relay_8h.html" title=" " alt="" coords="639,109,801,151"/>
-<area shape="rect" href="dock__mime__data_8h.html" title=" " alt="" coords="825,109,977,151"/>
-<area shape="rect" title=" " alt="" coords="907,206,1007,233"/>
-<area shape="rect" href="gui__globals_8h.html" title=" " alt="" coords="1053,117,1185,143"/>
-<area shape="rect" href="content__anchor_8h.html" title=" " alt="" coords="1209,109,1356,151"/>
-<area shape="rect" title=" " alt="" coords="1381,117,1486,143"/>
-<area shape="rect" title=" " alt="" coords="1510,117,1573,143"/>
-<area shape="rect" title=" " alt="" coords="1597,117,1731,143"/>
-<area shape="rect" title=" " alt="" coords="1755,117,1855,143"/>
-<area shape="rect" title=" " alt="" coords="1879,117,1982,143"/>
-<area shape="rect" title=" " alt="" coords="2007,117,2119,143"/>
-<area shape="rect" title=" " alt="" coords="2143,117,2220,143"/>
-<area shape="rect" title=" " alt="" coords="2244,117,2399,143"/>
-<area shape="rect" href="dock__button_8h.html" title=" " alt="" coords="5,199,157,240"/>
-<area shape="rect" href="widget_8h.html" title=" " alt="" coords="373,206,523,233"/>
-<area shape="rect" title=" " alt="" coords="182,206,255,233"/>
+<div class="center"><img src="dock__bar_8cpp__incl.png" border="0" usemap="#aplugins_2gui_2src_2docking__system_2dock__bar_8cpp" alt=""/></div>
+<map name="aplugins_2gui_2src_2docking__system_2dock__bar_8cpp" id="aplugins_2gui_2src_2docking__system_2dock__bar_8cpp">
+<area shape="rect" title=" " alt="" coords="1264,5,1435,47"/>
+<area shape="rect" href="dock__bar_8h.html" title=" " alt="" coords="317,95,469,136"/>
+<area shape="rect" href="content__frame_8h.html" title=" " alt="" coords="1077,95,1272,136"/>
+<area shape="rect" href="content__widget_8h.html" title=" " alt="" coords="119,95,265,136"/>
+<area shape="rect" href="content__drag__relay_8h.html" title=" " alt="" coords="665,95,826,136"/>
+<area shape="rect" href="dock__mime__data_8h.html" title=" " alt="" coords="851,95,1003,136"/>
+<area shape="rect" title=" " alt="" coords="962,191,1062,218"/>
+<area shape="rect" href="content__anchor_8h.html" title=" " alt="" coords="493,95,640,136"/>
+<area shape="rect" title=" " alt="" coords="1297,102,1402,129"/>
+<area shape="rect" title=" " alt="" coords="1426,102,1489,129"/>
+<area shape="rect" title=" " alt="" coords="1513,102,1647,129"/>
+<area shape="rect" title=" " alt="" coords="1671,102,1771,129"/>
+<area shape="rect" title=" " alt="" coords="1795,102,1898,129"/>
+<area shape="rect" title=" " alt="" coords="1923,102,2035,129"/>
+<area shape="rect" title=" " alt="" coords="2059,102,2136,129"/>
+<area shape="rect" title=" " alt="" coords="2160,102,2315,129"/>
+<area shape="rect" href="dock__button_8h.html" title=" " alt="" coords="529,184,681,225"/>
+<area shape="rect" href="widget_8h.html" title=" " alt="" coords="89,191,239,218"/>
+<area shape="rect" title=" " alt="" coords="263,191,337,218"/>
+<area shape="rect" title=" " alt="" coords="450,191,505,218"/>
+<area shape="rect" title=" " alt="" coords="361,191,426,218"/>
+<area shape="rect" title=" " alt="" coords="1227,191,1293,218"/>
+<area shape="rect" title=" " alt="" coords="1126,191,1202,218"/>
+<area shape="rect" title=" " alt="" coords="5,191,64,218"/>
+<area shape="rect" title=" " alt="" coords="833,191,908,218"/>
+<area shape="rect" title=" " alt="" coords="706,191,809,218"/>
 </map>
 </div>
 </div>
@@ -145,7 +152,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_38c8d24aef3972a7f87b834274e76e31.html">plugins</a></li><li class="navelem"><a class="el" href="dir_6bd2b93008728295189e380cf3731a95.html">gui</a></li><li class="navelem"><a class="el" href="dir_8f3a6e7567706389d7af07afaa901854.html">src</a></li><li class="navelem"><a class="el" href="dir_723f710d3e1503255229013675f4a73b.html">docking_system</a></li><li class="navelem"><a class="el" href="dock__bar_8cpp.html">dock_bar.cpp</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 16:51:56 for HAL by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

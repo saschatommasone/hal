@@ -27,7 +27,9 @@
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HAL
+   &#160;<span id="projectnumber">v4.4.1-491-g7151a1b7d</span>
    </div>
+   <div id="projectbrief">The Hardware Analyzer - a comprehensive reverse engineering and manipulation framework for gate-level netlists.</div>
   </td>
  </tr>
  </tbody>
@@ -90,7 +92,7 @@ $(document).ready(function(){initNavTree('classhal_1_1_pin_changed_event_scope.h
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="pin__event_8h_source.html">pin_event.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="pin__event_8h_source.html">hal_core/netlist/gate_library/enums/pin_event.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for hal::PinChangedEventScope:</div>
 <div class="dyncontent">
@@ -112,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>By creating an instance of this class a new scope gets created thus collecting events. </p>
 
-<p class="definition">Definition at line <a class="el" href="pin__event_8h_source.html#l00137">137</a> of file <a class="el" href="pin__event_8h_source.html">pin_event.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pin__event_8h_source.html#l00161">161</a> of file <a class="el" href="pin__event_8h_source.html">pin_event.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a73a1a1cff9a4e47100b11d491de89dca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a1a1cff9a4e47100b11d491de89dca">&#9670;&nbsp;</a></span>PinChangedEventScope()</h2>
@@ -136,7 +138,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pin__event_8cpp_source.html#l00071">71</a> of file <a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pin__event_8cpp_source.html#l00092">92</a> of file <a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a>.</p>
 
 </div>
 </div>
@@ -156,7 +158,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Destructor for scope instance decrementing scope count </p>
 
-<p class="definition">Definition at line <a class="el" href="pin__event_8cpp_source.html#l00081">81</a> of file <a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pin__event_8cpp_source.html#l00106">106</a> of file <a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a>.</p>
 
 </div>
 </div>
@@ -177,15 +179,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Attempts to send all stacked events. Will do nothing if not issued from top-level scope. </p>
 
-<p class="definition">Definition at line <a class="el" href="pin__event_8cpp_source.html#l00094">94</a> of file <a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pin__event_8cpp_source.html#l00120">120</a> of file <a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="netlist_2module_8cpp_source.html#l01402">hal::Module::assign_pin_to_group()</a>, <a class="el" href="netlist_2module_8cpp_source.html#l01251">hal::Module::create_pin_group()</a>, and <a class="el" href="netlist_2module_8cpp_source.html#l01320">hal::Module::delete_pin_group()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="netlist_2module_8cpp_source.html#l01415">hal::Module::assign_pin_to_group()</a>, <a class="el" href="netlist_2module_8cpp_source.html#l01260">hal::Module::create_pin_group()</a>, and <a class="el" href="netlist_2module_8cpp_source.html#l01333">hal::Module::delete_pin_group()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/runner/work/hal/hal/include/hal_core/netlist/gate_library/enums/<a class="el" href="pin__event_8h_source.html">pin_event.h</a></li>
-<li>/home/runner/work/hal/hal/src/netlist/gate_library/enums/<a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a></li>
+<li>include/hal_core/netlist/gate_library/enums/<a class="el" href="pin__event_8h_source.html">pin_event.h</a></li>
+<li>src/netlist/gate_library/enums/<a class="el" href="pin__event_8cpp_source.html">pin_event.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -193,7 +195,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="classhal_1_1_pin_changed_event_scope.html">PinChangedEventScope</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 16:51:59 for HAL by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HAL: /home/runner/work/hal/hal/plugins/gui/src/welcome_screen/open_file_widget.cpp File Reference</title>
+<title>HAL: plugins/gui/src/welcome_screen/open_file_widget.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,9 @@
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HAL
+   &#160;<span id="projectnumber">v4.4.1-491-g7151a1b7d</span>
    </div>
+   <div id="projectbrief">The Hardware Analyzer - a comprehensive reverse engineering and manipulation framework for gate-level netlists.</div>
   </td>
  </tr>
  </tbody>
@@ -89,9 +91,12 @@ $(document).ready(function(){initNavTree('open__file__widget_8cpp.html',''); ini
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="open__file__widget_8h_source.html">gui/welcome_screen/open_file_widget.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="import__project__dialog_8h_source.html">gui/export/import_project_dialog.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="file__manager_8h_source.html">gui/file_manager/file_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="graphics_8h_source.html">gui/gui_utils/graphics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="action__open__netlist__file_8h_source.html">gui/user_action/action_open_netlist_file.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log_8h_source.html">hal_core/utilities/log.h</a>&quot;</code><br />
+<code>#include &lt;QDebug&gt;</code><br />
 <code>#include &lt;QDragEnterEvent&gt;</code><br />
 <code>#include &lt;QLabel&gt;</code><br />
 <code>#include &lt;QMimeData&gt;</code><br />
@@ -100,28 +105,35 @@ $(document).ready(function(){initNavTree('open__file__widget_8cpp.html',''); ini
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for open_file_widget.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="open__file__widget_8cpp__incl.png" border="0" usemap="#a_2home_2runner_2work_2hal_2hal_2plugins_2gui_2src_2welcome__screen_2open__file__widget_8cpp" alt=""/></div>
-<map name="a_2home_2runner_2work_2hal_2hal_2plugins_2gui_2src_2welcome__screen_2open__file__widget_8cpp" id="a_2home_2runner_2work_2hal_2hal_2plugins_2gui_2src_2welcome__screen_2open__file__widget_8cpp">
-<area shape="rect" title=" " alt="" coords="643,5,841,76"/>
-<area shape="rect" href="open__file__widget_8h.html" title=" " alt="" coords="47,124,202,165"/>
-<area shape="rect" title=" " alt="" coords="103,221,170,247"/>
-<area shape="rect" href="file__manager_8h.html" title=" " alt="" coords="477,124,631,165"/>
-<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="656,131,828,158"/>
-<area shape="rect" href="log_8h.html" title=" " alt="" coords="277,124,407,165"/>
-<area shape="rect" title=" " alt="" coords="852,131,987,158"/>
-<area shape="rect" title=" " alt="" coords="1011,131,1111,158"/>
-<area shape="rect" title=" " alt="" coords="1135,131,1200,158"/>
-<area shape="rect" title=" " alt="" coords="1224,131,1335,158"/>
-<area shape="rect" title=" " alt="" coords="5,221,79,247"/>
-<area shape="rect" href="program__arguments_8h.html" title=" " alt="" coords="245,213,415,255"/>
-<area shape="rect" title=" " alt="" coords="439,221,514,247"/>
-<area shape="rect" title=" " alt="" coords="539,221,609,247"/>
-<area shape="rect" title=" " alt="" coords="634,221,685,247"/>
-<area shape="rect" href="defines_8h.html" title=" " alt="" coords="199,303,339,329"/>
-<area shape="rect" title=" " alt="" coords="709,221,775,247"/>
-<area shape="rect" title=" " alt="" coords="799,221,858,247"/>
-<area shape="rect" title=" " alt="" coords="883,221,953,247"/>
-<area shape="rect" title=" " alt="" coords="977,221,1059,247"/>
+<div class="center"><img src="open__file__widget_8cpp__incl.png" border="0" usemap="#aplugins_2gui_2src_2welcome__screen_2open__file__widget_8cpp" alt=""/></div>
+<map name="aplugins_2gui_2src_2welcome__screen_2open__file__widget_8cpp" id="aplugins_2gui_2src_2welcome__screen_2open__file__widget_8cpp">
+<area shape="rect" title=" " alt="" coords="1221,5,1434,47"/>
+<area shape="rect" href="open__file__widget_8h.html" title=" " alt="" coords="59,95,214,136"/>
+<area shape="rect" title=" " alt="" coords="103,191,170,218"/>
+<area shape="rect" href="import__project__dialog_8h.html" title=" " alt="" coords="362,95,549,136"/>
+<area shape="rect" href="file__manager_8h.html" title=" " alt="" coords="811,95,966,136"/>
+<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="1145,102,1317,129"/>
+<area shape="rect" href="action__open__netlist__file_8h.html" title=" " alt="" coords="1342,95,1507,136"/>
+<area shape="rect" href="log_8h.html" title=" " alt="" coords="990,95,1121,136"/>
+<area shape="rect" title=" " alt="" coords="1531,102,1606,129"/>
+<area shape="rect" title=" " alt="" coords="1631,102,1765,129"/>
+<area shape="rect" title=" " alt="" coords="1789,102,1889,129"/>
+<area shape="rect" title=" " alt="" coords="1913,102,1979,129"/>
+<area shape="rect" title=" " alt="" coords="2003,102,2113,129"/>
+<area shape="rect" title=" " alt="" coords="5,191,79,218"/>
+<area shape="rect" title=" " alt="" coords="194,191,269,218"/>
+<area shape="rect" title=" " alt="" coords="293,191,377,218"/>
+<area shape="rect" title=" " alt="" coords="402,191,509,218"/>
+<area shape="rect" title=" " alt="" coords="533,191,676,218"/>
+<area shape="rect" href="program__arguments_8h.html" title=" " alt="" coords="970,184,1141,225"/>
+<area shape="rect" title=" " alt="" coords="701,191,775,218"/>
+<area shape="rect" title=" " alt="" coords="800,191,871,218"/>
+<area shape="rect" title=" " alt="" coords="895,191,946,218"/>
+<area shape="rect" title=" " alt="" coords="1165,191,1231,218"/>
+<area shape="rect" title=" " alt="" coords="1255,191,1314,218"/>
+<area shape="rect" title=" " alt="" coords="1415,273,1485,300"/>
+<area shape="rect" title=" " alt="" coords="1389,191,1471,218"/>
+<area shape="rect" href="user__action_8h.html" title=" " alt="" coords="1495,191,1605,218"/>
 </map>
 </div>
 </div>
@@ -138,7 +150,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_38c8d24aef3972a7f87b834274e76e31.html">plugins</a></li><li class="navelem"><a class="el" href="dir_6bd2b93008728295189e380cf3731a95.html">gui</a></li><li class="navelem"><a class="el" href="dir_8f3a6e7567706389d7af07afaa901854.html">src</a></li><li class="navelem"><a class="el" href="dir_dd14da78325049390552e6d64a95d249.html">welcome_screen</a></li><li class="navelem"><a class="el" href="open__file__widget_8cpp.html">open_file_widget.cpp</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 16:51:56 for HAL by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

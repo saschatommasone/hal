@@ -55,12 +55,14 @@ var group__gui =
     ] ],
     [ "ContentLayoutArea", "classhal_1_1_content_layout_area.html", [
       [ "ContentLayoutArea", "classhal_1_1_content_layout_area.html#a50fe3e390dcf3c061f6ad53e6afd0bcc", null ],
-      [ "addContent", "classhal_1_1_content_layout_area.html#a0ccb12440d31886fbb9975dbe6cbda03", null ],
+      [ "addContent", "classhal_1_1_content_layout_area.html#af092113756da73c88feec2d0b44f9489", null ],
       [ "clear", "classhal_1_1_content_layout_area.html#a70fd4c6fdd1d634e8e4b6d9d5e7b1882", null ],
       [ "handleDragEnd", "classhal_1_1_content_layout_area.html#a1e754d379448f0b0db84f31041b1feb7", null ],
       [ "handleDragStart", "classhal_1_1_content_layout_area.html#a5b38adfb4c8f15b5281c5b7ceff484b5", null ],
       [ "initSplitterSize", "classhal_1_1_content_layout_area.html#aa9ecdd246e095f51f64e9e7ddfd7e9fe", null ],
       [ "removeContent", "classhal_1_1_content_layout_area.html#a70f4c9024775591824ec79175e5fa1f7", null ],
+      [ "restoreSplitter", "classhal_1_1_content_layout_area.html#a8b09d16faf593b7c88f3081aaddec216", null ],
+      [ "saveState", "classhal_1_1_content_layout_area.html#ab68445c469a8aaef2b8905615acdb08a", null ],
       [ "updateBottomDockBar", "classhal_1_1_content_layout_area.html#a97bd4f28826308cfb70c7603300219a0", null ],
       [ "updateLeftDockBar", "classhal_1_1_content_layout_area.html#a79e2d98b43683f2bff0d8a7a6efe28f4", null ],
       [ "updateRightDockBar", "classhal_1_1_content_layout_area.html#ab5a46be9ba7bb42cccdad98404c780d4", null ]
@@ -86,11 +88,12 @@ var group__gui =
       [ "createShortcuts", "classhal_1_1_content_widget.html#afd4e83b53eaa23def77bebf872e5fe8b", null ],
       [ "detach", "classhal_1_1_content_widget.html#a6296257c7a801a119265c3084b4ba6a0", null ],
       [ "detached", "classhal_1_1_content_widget.html#a4c6a567e4b2c6b1bab14e328999f8bce", null ],
+      [ "detachedFrame", "classhal_1_1_content_widget.html#af70decb33d7fd19600678caecfafcba1", null ],
       [ "handleSearchKeysequenceChanged", "classhal_1_1_content_widget.html#aa90888b283295d5a5c665c3f75fe878d", null ],
-      [ "icon", "classhal_1_1_content_widget.html#a3f35c56e055977451d4bad8c11716589", null ],
+      [ "icon", "classhal_1_1_content_widget.html#a9663ae72248e9c072ca407fed07e923a", null ],
       [ "iconPath", "classhal_1_1_content_widget.html#aa05c852c9a71516c950f9232e8b2c258", null ],
       [ "iconStyle", "classhal_1_1_content_widget.html#a53d853218de31b9fdb923f2773c6656f", null ],
-      [ "name", "classhal_1_1_content_widget.html#ac99228c611d75a8b5f459f77254258f6", null ],
+      [ "name", "classhal_1_1_content_widget.html#a23da38240acece4cf72de0c1d91c5285", null ],
       [ "name_changed", "classhal_1_1_content_widget.html#aa4b2e0e8c067b51bab780dfdbe345ac6", null ],
       [ "open", "classhal_1_1_content_widget.html#aa23671e2c451e89e7f98521b4f64a7fa", null ],
       [ "opened", "classhal_1_1_content_widget.html#a78278df05cea6a3903bda378f2d0e84b", null ],
@@ -102,16 +105,16 @@ var group__gui =
       [ "restoreFromProject", "classhal_1_1_content_widget.html#a264a3fb7fa07e2722272366e39974144", null ],
       [ "set_name", "classhal_1_1_content_widget.html#a534c1681313a2a2d05c550cbc6bb17fe", null ],
       [ "setAnchor", "classhal_1_1_content_widget.html#a95a6d6699dade8d1256d3b308b796b0d", null ],
+      [ "setDetachedFrame", "classhal_1_1_content_widget.html#af04370878c4217ef409b343832b6157d", null ],
       [ "setIcon", "classhal_1_1_content_widget.html#af94adef57e874fab4af873ad5f866b8e", null ],
       [ "setIconPath", "classhal_1_1_content_widget.html#a64aebab1bbb656d540a1a3890d4c848d", null ],
       [ "setIconStyle", "classhal_1_1_content_widget.html#aa5cee7418a73d2f878252e38f19705df", null ],
       [ "setupToolbar", "classhal_1_1_content_widget.html#a08d76ceb8080776f6b87af4a3bd6e6d8", null ],
       [ "mContentLayout", "classhal_1_1_content_widget.html#afd69e89ab3ff4a3ad430403efc97cbe5", null ],
+      [ "mDetachedFrame", "classhal_1_1_content_widget.html#a89b63431c6f7956a5cc04579bb2ae922", null ],
       [ "mSearchAction", "classhal_1_1_content_widget.html#a600bd891c5bc2cf6139761c21c3dd91e", null ],
       [ "mSearchKeysequence", "classhal_1_1_content_widget.html#a0fe07a490c09775afe6b10a4476f6c07", null ],
-      [ "mSearchShortcut", "classhal_1_1_content_widget.html#a967488363abaed7b1509455c8bd4be21", null ],
-      [ "iconPath", "classhal_1_1_content_widget.html#a0c08c7f76d96fcb6837d296e4fcf785e", null ],
-      [ "iconStyle", "classhal_1_1_content_widget.html#ae9d83cafdfaf9cb855db2eca66d767a9", null ]
+      [ "mSearchShortcut", "classhal_1_1_content_widget.html#a967488363abaed7b1509455c8bd4be21", null ]
     ] ],
     [ "ExportRegisteredFormat", "classhal_1_1_export_registered_format.html", [
       [ "ExportRegisteredFormat", "classhal_1_1_export_registered_format.html#a40f74b6fb3a43ab5aeb8bffa08763543", null ],
@@ -240,7 +243,8 @@ var group__gui =
         [ "Dark", "classhal_1_1_main_window.html#ae3e170bb9748ea88f10c6e3ef04af329aead9b69223731c1eb18da04d9638256a", null ],
         [ "Light", "classhal_1_1_main_window.html#ae3e170bb9748ea88f10c6e3ef04af329aa8f6310d82e943c5eeb8aec719bc8fc1", null ]
       ] ],
-      [ "addContent", "classhal_1_1_main_window.html#aaf8aedbcf266bd411e01163a9dd20947", null ],
+      [ "MainWindow", "classhal_1_1_main_window.html#aa5b4a0047a7277d7cdb34fa42a5760e8", null ],
+      [ "addContent", "classhal_1_1_main_window.html#a7f25413537ffc0fd8cefb2bc83d6b3b0", null ],
       [ "clear", "classhal_1_1_main_window.html#a0c8a2886b9c72b402cc7394dce3e3e29", null ],
       [ "closeGateLibraryManager", "classhal_1_1_main_window.html#a04e3c2e080e2271b5dc099d558c99a0f", null ],
       [ "closePluginManager", "classhal_1_1_main_window.html#a328059b7931181be6e375c4cabbd2f9a", null ],
@@ -264,6 +268,7 @@ var group__gui =
       [ "handleProjectOpened", "classhal_1_1_main_window.html#a7c360e2b5e3c13872311b205fd1d2d7d", null ],
       [ "handleSaveAsTriggered", "classhal_1_1_main_window.html#a2c8497b3a5179617c83e8d01bd0a6020", null ],
       [ "handleSaveTriggered", "classhal_1_1_main_window.html#acf671deb01bbf6cac6ea1eeb20345fe5", null ],
+      [ "layoutArea", "classhal_1_1_main_window.html#a6f14ab7fd6a64555aafa5e7fb1105aea", null ],
       [ "neGateIconPath", "classhal_1_1_main_window.html#ae3dd5d7eb3c30e6615a5b1d928736853", null ],
       [ "neGateIconStyle", "classhal_1_1_main_window.html#a1ec79b0fb9258ce3400898e3f72dc8b3", null ],
       [ "onActionCloseDocumentTriggered", "classhal_1_1_main_window.html#acf29b461b6f9b62ad6387f527a7aa246", null ],
@@ -274,7 +279,6 @@ var group__gui =
       [ "openSettings", "classhal_1_1_main_window.html#ac65fab18815b8253e7aaae656837b936", null ],
       [ "pluginsIconPath", "classhal_1_1_main_window.html#afe1b78964d52b94a97831dddea6edf4d", null ],
       [ "pluginsIconStyle", "classhal_1_1_main_window.html#a22789bbe0529f2731870d4824d9333eb", null ],
-      [ "Q_ENUM", "classhal_1_1_main_window.html#a8702df329ce6159b0023dd7e3b696f96", null ],
       [ "quitIconPath", "classhal_1_1_main_window.html#a8d45785d4773d5dbe35e354ed55395a8", null ],
       [ "quitIconStyle", "classhal_1_1_main_window.html#a760c807bc35c5dad45eebb6ac4058fe8", null ],
       [ "reloadStylsheet", "classhal_1_1_main_window.html#a380542f624230ae54843840c50c80e1b", null ],
@@ -303,22 +307,7 @@ var group__gui =
       [ "setUndoIconPath", "classhal_1_1_main_window.html#a8ec86ce0e0f70b0530e959a2d35e6323", null ],
       [ "setUndoIconStyle", "classhal_1_1_main_window.html#a1d620c6c8c1e97330e0c0688a8088921", null ],
       [ "undoIconPath", "classhal_1_1_main_window.html#a5ea9a41679654a05e4b9551bfc3089cd", null ],
-      [ "undoIconStyle", "classhal_1_1_main_window.html#add9aa398a1bb8aebd77cf4be79b83947", null ],
-      [ "disabledIconStyle", "classhal_1_1_main_window.html#a7a31c22c730a78c769fdbff03f118764", null ],
-      [ "halIconPath", "classhal_1_1_main_window.html#a21653cd4d6308f11351744edb7436d1c", null ],
-      [ "halIconStyle", "classhal_1_1_main_window.html#a913d7268afde9aa3f569425d6a6025f5", null ],
-      [ "neGateIconPath", "classhal_1_1_main_window.html#a74d9f089f3971179838246d8a2e2b638", null ],
-      [ "neGateIconStyle", "classhal_1_1_main_window.html#a8941ae4cf803ec092409852b74a2c12f", null ],
-      [ "openFileIconPath", "classhal_1_1_main_window.html#a8f2d141df22affeec7031fb76d856d27", null ],
-      [ "openFileIconStyle", "classhal_1_1_main_window.html#a3736f6b15fd9ed7f8f68ee44c49c2c19", null ],
-      [ "pluginsIconPath", "classhal_1_1_main_window.html#af63c572c98c6dcd96d93cb47dc82f546", null ],
-      [ "pluginsIconStyle", "classhal_1_1_main_window.html#a530a886a4e4626dcee90480373881626", null ],
-      [ "quitIconPath", "classhal_1_1_main_window.html#a5f4a876e8a68676748e0e1558863cb4e", null ],
-      [ "quitIconStyle", "classhal_1_1_main_window.html#a18e7e877007107d3c97c1474abea9eda", null ],
-      [ "settingsIconPath", "classhal_1_1_main_window.html#a326fa1c3078b9e8242c2cc8272154901", null ],
-      [ "settingsIconStyle", "classhal_1_1_main_window.html#ac3bab1d6b1d8f5ebe61c987ec0952a76", null ],
-      [ "undoIconPath", "classhal_1_1_main_window.html#af31a3d91b902a3d98b2be4149605f732", null ],
-      [ "undoIconStyle", "classhal_1_1_main_window.html#a28c0d5edd7fcf369192fea951135c363", null ]
+      [ "undoIconStyle", "classhal_1_1_main_window.html#add9aa398a1bb8aebd77cf4be79b83947", null ]
     ] ],
     [ "ModuleItem", "classhal_1_1_module_item.html", [
       [ "TreeItemType", "classhal_1_1_module_item.html#adbacf40a93cae0f07b72c07da9bb9f42", [
@@ -338,7 +327,7 @@ var group__gui =
       [ "isToplevelItem", "classhal_1_1_module_item.html#a8edd3b37443b316e260f6e338313be66", null ],
       [ "name", "classhal_1_1_module_item.html#aa9b0899e7859e368d169da839a352ece", null ],
       [ "setData", "classhal_1_1_module_item.html#a414fb66f33e15959aadc21d0113c0d18", null ],
-      [ "setDataAtIndex", "classhal_1_1_module_item.html#a030a4d5fdbff4f218db0c2db86dd8460", null ],
+      [ "setDataAtColumn", "classhal_1_1_module_item.html#aceb3871d3bd45f125262c5e72f7e5576", null ],
       [ "setHighlighted", "classhal_1_1_module_item.html#a412ccb69f5b0198e097ba37b609de924", null ],
       [ "setModuleType", "classhal_1_1_module_item.html#ae574669618b1420e7bd03712a845a502", null ],
       [ "setName", "classhal_1_1_module_item.html#a9a7b4c3f14ce92c7801560df822a5060", null ]
@@ -370,6 +359,7 @@ var group__gui =
       [ "updateGateName", "classhal_1_1_module_model.html#a8a1cfb7a8ed65b65cda4d971316e0536", null ],
       [ "updateModuleName", "classhal_1_1_module_model.html#aba67be1ad929342450a11ff64f73c7a9", null ],
       [ "updateModuleParent", "classhal_1_1_module_model.html#a1244c475cef303c88d73eaaafad72484", null ],
+      [ "updateModuleType", "classhal_1_1_module_model.html#a17252e57b28484e5a44a7db7f43c69ec", null ],
       [ "updateNetName", "classhal_1_1_module_model.html#a14b41328dbbc86811d877c6122487f69", null ],
       [ "updateNetParent", "classhal_1_1_module_model.html#a9d097fd872cfc849e2aa85dbf51a336f", null ],
       [ "ModuleItem", "classhal_1_1_module_model.html#ada0de3bfd2de607363f73e8c2e3b3bdf", null ]
@@ -486,7 +476,7 @@ var group__gui =
       [ "getPinTypeAsText", "classhal_1_1_pin_item.html#a088cabd8c181dee6dcab975f00d2e6ad", null ],
       [ "row", "classhal_1_1_pin_item.html#a38149f7f9faeb43fb4796d89b6586b62", null ],
       [ "setData", "classhal_1_1_pin_item.html#a81e107c124ee4e9e10bb08b677523514", null ],
-      [ "setDataAtIndex", "classhal_1_1_pin_item.html#a2f3ae83628527195ebb1764a267cc2b9", null ],
+      [ "setDataAtColumn", "classhal_1_1_pin_item.html#a82eff399afd1a3a9fff149f8500030e5", null ],
       [ "setDirection", "classhal_1_1_pin_item.html#ac87fc7cca98d9db5118f8663cf325832", null ],
       [ "setDirection", "classhal_1_1_pin_item.html#a75d3a12974fdc9fcf9e5b267cb7aa41a", null ],
       [ "setFields", "classhal_1_1_pin_item.html#a069431d8d173526317f85cc49976dfc7", null ],
@@ -496,6 +486,16 @@ var group__gui =
       [ "setName", "classhal_1_1_pin_item.html#a59225eb586543a00432c7a85f63bf590", null ],
       [ "setType", "classhal_1_1_pin_item.html#a681bfefe718a82344d003d5a43a5734b", null ],
       [ "setType", "classhal_1_1_pin_item.html#a125176d5bd4d189ffdee611c8e14d9fb", null ]
+    ] ],
+    [ "PluginGui", "classhal_1_1_plugin_gui.html", [
+      [ "PluginGui", "classhal_1_1_plugin_gui.html#a256bbb28ab9387e3f1d9fb2846b84094", null ],
+      [ "exec", "classhal_1_1_plugin_gui.html#a4a2326cb6bf9c78d28a7ae82655c15ca", null ],
+      [ "get_description", "classhal_1_1_plugin_gui.html#a6d97c782348d10e6fc88a900e38170fb", null ],
+      [ "get_name", "classhal_1_1_plugin_gui.html#afae9dee5316e1b95812c25b7d1c598a9", null ],
+      [ "get_version", "classhal_1_1_plugin_gui.html#a21214d366b49e93ebdfad07607adeb8f", null ],
+      [ "initialize_logging", "classhal_1_1_plugin_gui.html#a3f50c1907b0de260740cefd7bb8e6e19", null ],
+      [ "set_layout_locker", "classhal_1_1_plugin_gui.html#a5754fbe00cb285211d388dc52ed77cb0", null ],
+      [ "set_progress", "classhal_1_1_plugin_gui.html#a70e7ac7343a0c5afa271b73051073396", null ]
     ] ],
     [ "PluginRelay", "classhal_1_1_plugin_relay.html", [
       [ "PluginRelay", "classhal_1_1_plugin_relay.html#a2015343701da5d20c9477fbec756f5c7", null ],
@@ -540,13 +540,7 @@ var group__gui =
       [ "setSearchIconStyle", "classhal_1_1_searchbar.html#a7b801c20f3bc6eeeb7886ba89512eaf3", null ],
       [ "showEvent", "classhal_1_1_searchbar.html#aee1318fbf959564a565d4147c963edc8", null ],
       [ "triggerNewSearch", "classhal_1_1_searchbar.html#ae0edb3dbec0c28c6bff7b7d63b6e5594", null ],
-      [ "updateSearchHistory", "classhal_1_1_searchbar.html#a8e603890e91da31795904dbf85da319c", null ],
-      [ "clearIcon", "classhal_1_1_searchbar.html#af2817a1aaee40850d8a91e7820306d72", null ],
-      [ "clearIconStyle", "classhal_1_1_searchbar.html#acce2df0b4822dc389bbb13fc981c3f98", null ],
-      [ "optionDialogIcon", "classhal_1_1_searchbar.html#a3d5288c5dd70cbb583de7868485114cb", null ],
-      [ "optionDialogIconStyle", "classhal_1_1_searchbar.html#a5c0c738d271a455f48a92d33117c6cc4", null ],
-      [ "searchIcon", "classhal_1_1_searchbar.html#a1581c13c9b0dd2828d0339329ab52bc2", null ],
-      [ "searchIconStyle", "classhal_1_1_searchbar.html#acbd16cb15da836f444522dc33f196412", null ]
+      [ "updateSearchHistory", "classhal_1_1_searchbar.html#a8e603890e91da31795904dbf85da319c", null ]
     ] ],
     [ "GatePinsTreeModel", "classhal_1_1_gate_pins_tree_model.html", [
       [ "GatePinsTreeModel", "classhal_1_1_gate_pins_tree_model.html#a10512e7ad81c53d77a9228e798b2f376", null ],
@@ -724,7 +718,7 @@ var group__gui =
     [ "GetInTouchItem", "classhal_1_1_get_in_touch_item.html", [
       [ "GetInTouchItem", "classhal_1_1_get_in_touch_item.html#a4069da2b43a09de51adb6b13ed81cf2e", null ],
       [ "clicked", "classhal_1_1_get_in_touch_item.html#ae4f2606cd231a410b151be10de505020", null ],
-      [ "enterEvent", "classhal_1_1_get_in_touch_item.html#a6be34ef58d3960ad2f3f2cf88cfcc2d3", null ],
+      [ "enterEvent", "classhal_1_1_get_in_touch_item.html#a3a5afe8419f456067a20798ae9e172fd", null ],
       [ "hover", "classhal_1_1_get_in_touch_item.html#a33767cf0d434c82dcceced8533679801", null ],
       [ "iconPath", "classhal_1_1_get_in_touch_item.html#a1b4420a3f5d56dbd83d18d5ce5e81f32", null ],
       [ "iconStyle", "classhal_1_1_get_in_touch_item.html#aa14958c6f546e4bc26113f858220f545", null ],
@@ -733,10 +727,7 @@ var group__gui =
       [ "repolish", "classhal_1_1_get_in_touch_item.html#ad13e864346ed80896cbb1032c1e72eb0", null ],
       [ "setHoverActive", "classhal_1_1_get_in_touch_item.html#a93b05f16592d5b52164084ad80953fb8", null ],
       [ "setIconPath", "classhal_1_1_get_in_touch_item.html#a43b79c5220feca624f25879e47443175", null ],
-      [ "setIconStyle", "classhal_1_1_get_in_touch_item.html#a6e9f9bc56cf10fc6567ac97e85089e20", null ],
-      [ "hover", "classhal_1_1_get_in_touch_item.html#a8cc6cb92fe52b822d7f0537028ff3f93", null ],
-      [ "iconPath", "classhal_1_1_get_in_touch_item.html#acf7321f0e5c366cf7e0192399f4ad39a", null ],
-      [ "iconStyle", "classhal_1_1_get_in_touch_item.html#ae09a501a033c83ee3ec3d6277606eb67", null ]
+      [ "setIconStyle", "classhal_1_1_get_in_touch_item.html#a6e9f9bc56cf10fc6567ac97e85089e20", null ]
     ] ],
     [ "GetInTouchWidget", "classhal_1_1_get_in_touch_widget.html", [
       [ "GetInTouchWidget", "classhal_1_1_get_in_touch_widget.html#a25e6cbcd27c08366d3170718fde88158", null ],
@@ -756,14 +747,11 @@ var group__gui =
       [ "iconStyle", "classhal_1_1_open_file_widget.html#a8a717e67e7b361d77350fc42a9b13038", null ],
       [ "repolish", "classhal_1_1_open_file_widget.html#a30bf5665a4ed8a4fffe610c0d2a0b387", null ],
       [ "setIconPath", "classhal_1_1_open_file_widget.html#a4395d5ddba7ae110dfa76bd9e9437bc4", null ],
-      [ "setIconStyle", "classhal_1_1_open_file_widget.html#ad52808414feb1120be90d900feceeb04", null ],
-      [ "dragActive", "classhal_1_1_open_file_widget.html#a6cf3ab2dfa9081ca4bb107227220ed26", null ],
-      [ "iconPath", "classhal_1_1_open_file_widget.html#a6b7d4a8846925293b08f4ee2a6f0beff", null ],
-      [ "iconStyle", "classhal_1_1_open_file_widget.html#a89800c39d3542b4ff1899f681d6b64d8", null ]
+      [ "setIconStyle", "classhal_1_1_open_file_widget.html#ad52808414feb1120be90d900feceeb04", null ]
     ] ],
     [ "RecentFileItem", "classhal_1_1_recent_file_item.html", [
       [ "RecentFileItem", "classhal_1_1_recent_file_item.html#a723e7b9472d488154869837fb6ced2a2", null ],
-      [ "enterEvent", "classhal_1_1_recent_file_item.html#abef2349fda55960e3d55822dcb34f54a", null ],
+      [ "enterEvent", "classhal_1_1_recent_file_item.html#accde0ae00642d804ca14a2b4ed33c376", null ],
       [ "eventFilter", "classhal_1_1_recent_file_item.html#ac0f9c33df8153c46e3d73249d2124a62", null ],
       [ "file", "classhal_1_1_recent_file_item.html#a8c8f38db3434b809a7d5cd6916a8f7a5", null ],
       [ "hover", "classhal_1_1_recent_file_item.html#a125ef965f5fd2bbd61da7313c65caf23", null ],
@@ -779,12 +767,7 @@ var group__gui =
       [ "setIconPath", "classhal_1_1_recent_file_item.html#ad6e9237537525e4512a5d779db1561b0", null ],
       [ "setIconStyle", "classhal_1_1_recent_file_item.html#a3acd7fa17d644e3c181c32d13c2f0e1a", null ],
       [ "setMissing", "classhal_1_1_recent_file_item.html#abf53f74bf7bddd3afef1463547b8149d", null ],
-      [ "sizeHint", "classhal_1_1_recent_file_item.html#aa3230bbc1117767314698d6eeef23dde", null ],
-      [ "hover", "classhal_1_1_recent_file_item.html#a08911388b5df507deee4910102a667b8", null ],
-      [ "iconPath", "classhal_1_1_recent_file_item.html#ace21bce12087ede7676b6349d85de975", null ],
-      [ "iconStyle", "classhal_1_1_recent_file_item.html#a63a8ab21d8b28abf56de650f8c55b9db", null ],
-      [ "isProject", "classhal_1_1_recent_file_item.html#a3aa68986ca2e461980e4d5e0b5dd23ae", null ],
-      [ "missing", "classhal_1_1_recent_file_item.html#aad0eb17ef35b31c7cdcfe2f0abb7f562", null ]
+      [ "sizeHint", "classhal_1_1_recent_file_item.html#aa3230bbc1117767314698d6eeef23dde", null ]
     ] ],
     [ "RecentFilesWidget", "classhal_1_1_recent_files_widget.html", [
       [ "RecentFilesWidget", "classhal_1_1_recent_files_widget.html#a4362c02a0e0849c8c5040a50d4242e98", null ],
@@ -812,6 +795,5 @@ var group__gui =
       [ "Gate", "group__gui.html#ggaab0cd38a41c1215ae70822b1d501daa1ad25b4bd4c72aa2c07ee87adb10b59f16", null ],
       [ "Net", "group__gui.html#ggaab0cd38a41c1215ae70822b1d501daa1a5012af45088eb8e999bb8350077b12ca", null ]
     ] ],
-    [ "ensureOnScreen", "group__gui.html#ga284a43cae48443fa22ac672a8b6ea8a0", null ],
-    [ "Q_DECLARE_METATYPE", "group__gui.html#ga077e1c5730ec712b6b5e2328edd17c56", null ]
+    [ "ensureOnScreen", "group__gui.html#ga284a43cae48443fa22ac672a8b6ea8a0", null ]
 ];

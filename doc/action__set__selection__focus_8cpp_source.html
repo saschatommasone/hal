@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HAL: /home/runner/work/hal/hal/plugins/gui/src/user_action/action_set_selection_focus.cpp Source File</title>
+<title>HAL: plugins/gui/src/user_action/action_set_selection_focus.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,9 @@
   <td id="projectlogo"><img alt="Logo" src="hal_icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HAL
+   &#160;<span id="projectnumber">v4.4.1-491-g7151a1b7d</span>
    </div>
+   <div id="projectbrief">The Hardware Analyzer - a comprehensive reverse engineering and manipulation framework for gate-level netlists.</div>
   </td>
  </tr>
  </tbody>
@@ -146,15 +148,15 @@ $(document).ready(function(){initNavTree('action__set__selection__focus_8cpp_sou
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classhal_1_1_action_set_selection_focus.html#a61b1961ce88e1e8ea6c635f0a0afb2df">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhal_1_1_action_set_selection_focus.html#a61b1961ce88e1e8ea6c635f0a0afb2df">ActionSetSelectionFocus::readFromXml</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html">QXmlStreamReader</a>&amp; xmlIn)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qstringref.html">QStringRef</a> sfocAttribute = xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#attributes">attributes</a>().<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamattributes.html#value">value</a>(<span class="stringliteral">&quot;subfocus&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!sfocAttribute.<a class="codeRef" href="https://doc.qt.io/qt-5/qstringref.html#isNull">isNull</a>() &amp;&amp; !sfocAttribute.<a class="codeRef" href="https://doc.qt.io/qt-5/qstringref.html#isEmpty">isEmpty</a>())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">auto</span> sfocAttribute = xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#attributes">attributes</a>().<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamattributes.html#value">value</a>(<span class="stringliteral">&quot;subfocus&quot;</span>);   <span class="comment">// Qt5: QStringRef    Qt6: QStringView</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!sfocAttribute.isNull() &amp;&amp; !sfocAttribute.isEmpty())</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (sfocAttribute == <span class="stringliteral">&quot;Left&quot;</span>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (sfocAttribute == <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>(<span class="stringliteral">&quot;Left&quot;</span>))</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                mSubfocus = <a class="code" href="classhal_1_1_selection_relay.html#a75d8c404b06807f7e57fe3f9c1a39ff2a945d5e233cf7d6240f6b783b36a374ff">SelectionRelay::Subfocus::Left</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                mSubfocusIndex = xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#attributes">attributes</a>().<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamattributes.html#value">value</a>(<span class="stringliteral">&quot;subfocusIndex&quot;</span>).<a class="codeRef" href="https://doc.qt.io/qt-5/qstringref.html#toInt">toInt</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sfocAttribute == <span class="stringliteral">&quot;Right&quot;</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sfocAttribute == <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>(<span class="stringliteral">&quot;Right&quot;</span>))</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                mSubfocus = <a class="code" href="classhal_1_1_selection_relay.html#a75d8c404b06807f7e57fe3f9c1a39ff2a92b09c7c48c520c3c55e497875da437c">SelectionRelay::Subfocus::Right</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                mSubfocusIndex = xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#attributes">attributes</a>().<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamattributes.html#value">value</a>(<span class="stringliteral">&quot;subfocusIndex&quot;</span>).<a class="codeRef" href="https://doc.qt.io/qt-5/qstringref.html#toInt">toInt</a>();</div>
@@ -163,11 +165,11 @@ $(document).ready(function(){initNavTree('action__set__selection__focus_8cpp_sou
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">while</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#readNextStartElement">readNextStartElement</a>())</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#name">name</a>()==<span class="stringliteral">&quot;modules&quot;</span>)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#name">name</a>()==<a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>(<span class="stringliteral">&quot;modules&quot;</span>))</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                mModules = <a class="code" href="classhal_1_1_user_action.html#aac8393ba15248d9da8a315256cb88860">setFromText</a>(xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#readElementText">readElementText</a>());</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#name">name</a>()==<span class="stringliteral">&quot;gates&quot;</span>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#name">name</a>()==<a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>(<span class="stringliteral">&quot;gates&quot;</span>))</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                mGates = <a class="code" href="classhal_1_1_user_action.html#aac8393ba15248d9da8a315256cb88860">setFromText</a>(xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#readElementText">readElementText</a>());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#name">name</a>()==<span class="stringliteral">&quot;nets&quot;</span>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#name">name</a>()==<a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>(<span class="stringliteral">&quot;nets&quot;</span>))</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                mNets = <a class="code" href="classhal_1_1_user_action.html#aac8393ba15248d9da8a315256cb88860">setFromText</a>(xmlIn.<a class="codeRef" href="https://doc.qt.io/qt-5/qxmlstreamreader.html#readElementText">readElementText</a>());</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
@@ -266,17 +268,14 @@ $(document).ready(function(){initNavTree('action__set__selection__focus_8cpp_sou
 <div class="ttc" id="aclasshal_1_1_user_action_object_type_html_a40b5d0be6816b46418fd01ae9c885340"><div class="ttname"><a href="classhal_1_1_user_action_object_type.html#a40b5d0be6816b46418fd01ae9c885340">hal::UserActionObjectType::toSelectionType</a></div><div class="ttdeci">static SelectionRelay::ItemType toSelectionType(ObjectType t)</div><div class="ttdef"><b>Definition:</b> <a href="user__action__object_8cpp_source.html#l00060">user_action_object.cpp:60</a></div></div>
 <div class="ttc" id="aclasshal_1_1_user_action_object_type_html_a4e217a9c8e1279f5819a983f7a0d7787"><div class="ttname"><a href="classhal_1_1_user_action_object_type.html#a4e217a9c8e1279f5819a983f7a0d7787">hal::UserActionObjectType::fromSelectionType</a></div><div class="ttdeci">static ObjectType fromSelectionType(SelectionRelay::ItemType itp)</div><div class="ttdef"><b>Definition:</b> <a href="user__action__object_8cpp_source.html#l00047">user_action_object.cpp:47</a></div></div>
 <div class="ttc" id="agui__globals_8h_html"><div class="ttname"><a href="gui__globals_8h.html">gui_globals.h</a></div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> <a href="parser__liberty_8cpp_source.html#l00009">parser_liberty.cpp:10</a></div></div>
-<div class="ttc" id="anamespacehal_html_a6ba6e6ec49eb58d0b35a604e16187112"><div class="ttname"><a href="namespacehal.html#a6ba6e6ec49eb58d0b35a604e16187112">hal::gSelectionRelay</a></div><div class="ttdeci">SelectionRelay * gSelectionRelay</div><div class="ttdef"><b>Definition:</b> <a href="plugin__gui_8cpp_source.html#l00083">plugin_gui.cpp:83</a></div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> <a href="defines_8h_source.html#l00044">defines.h:45</a></div></div>
+<div class="ttc" id="anamespacehal_html_a6ba6e6ec49eb58d0b35a604e16187112"><div class="ttname"><a href="namespacehal.html#a6ba6e6ec49eb58d0b35a604e16187112">hal::gSelectionRelay</a></div><div class="ttdeci">SelectionRelay * gSelectionRelay</div><div class="ttdef"><b>Definition:</b> <a href="plugin__gui_8cpp_source.html#l00084">plugin_gui.cpp:84</a></div></div>
 <div class="ttc" id="aqcryptographichash_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcryptographichash.html">QCryptographicHash</a></div></div>
 <div class="ttc" id="aqcryptographichash_html_addData"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcryptographichash.html#addData">QCryptographicHash::addData</a></div><div class="ttdeci">void addData(const char *data, int length)</div></div>
 <div class="ttc" id="aqset_html_insert"><div class="ttname"><a href="https://doc.qt.io/qt-5/qset.html#insert">QSet::insert</a></div><div class="ttdeci">QSet::iterator insert(const T &amp;value)</div></div>
 <div class="ttc" id="aqset_html_isEmpty"><div class="ttname"><a href="https://doc.qt.io/qt-5/qset.html#isEmpty">QSet::isEmpty</a></div><div class="ttdeci">bool isEmpty() const const</div></div>
 <div class="ttc" id="aqstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 <div class="ttc" id="aqstring_html_number-1"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html#number-1">QString::number</a></div><div class="ttdeci">QString number(int n, int base)</div></div>
-<div class="ttc" id="aqstringref_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstringref.html">QStringRef</a></div></div>
-<div class="ttc" id="aqstringref_html_isEmpty"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstringref.html#isEmpty">QStringRef::isEmpty</a></div><div class="ttdeci">bool isEmpty() const const</div></div>
-<div class="ttc" id="aqstringref_html_isNull"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstringref.html#isNull">QStringRef::isNull</a></div><div class="ttdeci">bool isNull() const const</div></div>
 <div class="ttc" id="aqstringref_html_toInt"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstringref.html#toInt">QStringRef::toInt</a></div><div class="ttdeci">int toInt(bool *ok, int base) const const</div></div>
 <div class="ttc" id="aqxmlstreamattributes_html_value"><div class="ttname"><a href="https://doc.qt.io/qt-5/qxmlstreamattributes.html#value">QXmlStreamAttributes::value</a></div><div class="ttdeci">QStringRef value(const QString &amp;namespaceUri, const QString &amp;name) const const</div></div>
 <div class="ttc" id="aqxmlstreamreader_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qxmlstreamreader.html">QXmlStreamReader</a></div></div>
@@ -293,7 +292,7 @@ $(document).ready(function(){initNavTree('action__set__selection__focus_8cpp_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_38c8d24aef3972a7f87b834274e76e31.html">plugins</a></li><li class="navelem"><a class="el" href="dir_6bd2b93008728295189e380cf3731a95.html">gui</a></li><li class="navelem"><a class="el" href="dir_8f3a6e7567706389d7af07afaa901854.html">src</a></li><li class="navelem"><a class="el" href="dir_5e8fab963b6d7d6d8891b5cad4f241a7.html">user_action</a></li><li class="navelem"><a class="el" href="action__set__selection__focus_8cpp.html">action_set_selection_focus.cpp</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 16:51:55 for HAL by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
